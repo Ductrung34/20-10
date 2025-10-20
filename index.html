@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lời chúc 20/10</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #aeefff, #d0f0ff);
+
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    .stars,
+    .flowers,
+    .hearts {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .star,
+    .flower,
+    .heart {
+      position: absolute;
+      animation: floatIn ease-in-out infinite;
+      animation-duration: 4s;
+    }
+
+    .star {
+      width: 6px;
+      height: 6px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 8px white;
+    }
+
+    .flower,
+    .heart {
+      font-size: 20px;
+      opacity: 0.8;
+    }
+
+    @keyframes floatIn {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+
+      50% {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+    }
+
+    @keyframes glow {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.6;
+        transform: scale(1.05);
+      }
+    }
+
+    .text-line {
+      position: absolute;
+      font-size: 20px;
+      animation: glow 3s ease-in-out infinite;
+      transition: transform 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .text-line:hover {
+      transform: scale(1.05);
+    }
+
+    .image-frame {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 360px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+      opacity: 0.95;
+      backdrop-filter: blur(6px);
+      transition: transform 0.5s ease;
+    }
+
+    .image-frame:hover {
+      transform: translate(-50%, -50%) scale(1.03);
+    }
+
+    .image-frame img {
+      width: 100%;
+      border-radius: 20px;
+      display: block;
+    }
+
+    .heart-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .heart-overlay span {
+      position: absolute;
+      animation: floatIn 4s ease-in-out infinite;
+      font-size: 18px;
+      color: pink;
+    }
+
+    /* Mèo chạy nhảy */
+    .cat {
+      position: absolute;
+      bottom: 0;
+      font-size: 40px;
+      animation: runJump 3s ease-in-out infinite;
+    }
+
+    .cat:nth-child(1) {
+      left: 100px;
+      animation-delay: 0s;
+    }
+
+    .cat:nth-child(2) {
+      left: 200px;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes runJump {
+      0% {
+        transform: translateY(0) translateX(0);
+      }
+
+      25% {
+        transform: translateY(-20px) translateX(30px);
+      }
+
+      50% {
+        transform: translateY(0) translateX(60px);
+      }
+
+      75% {
+        transform: translateY(-20px) translateX(90px);
+      }
+
+      100% {
+        transform: translateY(0) translateX(120px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="stars"></div>
+  <div class="flowers"></div>
+  <div class="hearts"></div>
+
+  <!-- Lời chúc bên trái -->
+  <div class="text-line" style="color:#FFD700; top:100px; left:50px;">Chúc em 20/10 thật rạng rỡ như nắng mai ☀️</div>
+  <div class="text-line" style="color:#FF69B4; top:180px; left:50px;">Mỗi ngày bên em là một món quà 💝</div>
+  <div class="text-line" style="color:#00FFCC; top:260px; left:50px;">Cảm ơn em đã đến bên anh 💖</div>
+  <div class="text-line" style="color:#FFB6C1; top:340px; left:50px;">Chúc em luôn cười tươi như hoa 🌸</div>
+  <div class="text-line" style="color:#FFA500; top:420px; left:50px;">20/10 ngọt ngào như chính em 🍬</div>
+
+  <!-- Lời chúc bên phải -->
+  <div class="text-line" style="color:#FF6347; top:100px; right:50px;">Anh yêu em nhiều hơn những gì anh nói 💌</div>
+  <div class="text-line" style="color:#ADFF2F; top:180px; right:50px;">Mong em luôn hạnh phúc và bình yên 🌈</div>
+  <div class="text-line" style="color:#87CEFA; top:260px; right:50px;">Em là người con gái tuyệt vời nhất 💫</div>
+  <div class="text-line" style="color:#DA70D6; top:340px; right:50px;">Chúc em thành công và luôn tự tin 💼</div>
+  <div class="text-line" style="color:#FF00FF; top:420px; right:50px;">20/10 – ngày của em, của yêu thương 💐</div>
+
+  <!-- Ảnh trung tâm -->
+  <div class="image-frame">
+    <img src="b.jpg" alt="Ảnh người yêu">
+    <div class="heart-overlay">
+      <span style="left:20px; top:40px;">💗</span>
+      <span style="left:100px; top:70px;">💓</span>
+      <span style="left:180px; top:20px;">💞</span>
+      <span style="left:250px; top:50px;">❤️</span>
+    </div>
+  </div>
+
+  <!-- Mèo chạy nhảy -->
+  <div class="cat">🐱</div>
+  <div class="cat">🐱</div>
+
+  <script>
+    // Sao nổi lên
+    const stars = document.querySelector('.stars');
+    for (let i = 0; i < 80; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.left = Math.random() * window.innerWidth + 'px';
+      star.style.top = Math.random() * window.innerHeight + 'px';
+      star.style.animationDelay = (Math.random() * 5) + 's';
+      stars.appendChild(star);
+    }
+
+    // Hoa nổi lên
+    const flowers = document.querySelector('.flowers');
+    const flowerSymbols = ['🌸', '🌼', '💮'];
+    for (let i = 0; i < 30; i++) {
+      const flower = document.createElement('div');
+      flower.className = 'flower';
+      flower.textContent = flowerSymbols[Math.floor(Math.random() * flowerSymbols.length)];
+      flower.style.left = Math.random() * window.innerWidth + 'px';
+      flower.style.top = Math.random() * window.innerHeight + 'px';
+      flower.style.animationDelay = (Math.random() * 5) + 's';
+      flowers.appendChild(flower);
+    }
+
+    // Trái tim nổi lên
+    const hearts = document.querySelector('.hearts');
+    const heartSymbols = ['❤️', '💖', '💕', '💘', '💗', '💓', '💞'];
+    for (let i = 0; i < 30; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.textContent = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      heart.style.top = Math.random() * window.innerHeight + 'px';
+      heart.style.animationDelay = (Math.random() * 5) + 's';
+      hearts.appendChild(heart);
+    }
+  </script>
+
+</body>
+</
